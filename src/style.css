@@ -1,0 +1,111 @@
+/*--Fundamentals--*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: #b4ffcd;
+    background-color: #ffbab4;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  /*--Container--*/
+  .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: rgba(173,124,119,0.2);
+      border: 1px solid #945048;
+      border-radius: 5px;
+      width: 80%;
+  }
+  .about {
+      background-color: #eda69e;
+      margin: 1rem;
+      padding: 3rem 2rem;
+      border: 1px solid #ab766f;
+  }
+  .choice {
+      background-color: #eda69e;
+      margin: 1rem;
+      padding: 1rem;
+      border: 1px solid #ab766f;
+  }
+  /*--Calculator--*/
+  #metricBtn {
+      margin-right: 1rem;
+  }
+  /*--Forms--*/
+  .form__row {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 0.5rem;
+  }
+  .form__row input[type='number'] {
+      background-color: #fff;
+      border: 1px solid #945048;
+      border-radius: 2px;
+      width: 100%;
+      font-size: 0.8rem;
+      padding: 0.5rem;
+      text-align: center;
+  }
+  .form__row label {
+      margin-bottom: 0.9rem;
+      padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+  /*--Remove appearance of scroll on input fields in Chrome*/
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  .metric {
+      background-color: #eda69e;
+      padding: 1rem;
+      border: 1px solid #ab766f;
+      margin: 1rem;
+  }
+  .imperial {
+      background-color: #eda69e;
+      padding: 1rem;
+      border: 1px solid #ab766f;
+      margin: 1rem;
+  }
+  button {
+      margin: 1rem 1rem 0.4rem 1rem;
+      padding: 1rem;
+      border-radius: 3px;
+      font-size: 0.9rem;
+      border: 1px solid #945048;
+      background: rgba(246,244,247, 0.8);
+  }
+  button:hover {
+      transition: .2s;
+      border: 3px solid #ab766f;
+  }
+  #calcBtn {
+      margin: 0.1rem 2rem 0.4rem 2rem;
+  }
+  .metricDiv {
+      display: block;
+  }
+  .imperialDiv {
+      display: none;
+  }
+  /*--Media queries--*/
+  form__row {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+  
