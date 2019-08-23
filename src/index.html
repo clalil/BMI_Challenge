@@ -63,8 +63,8 @@
             let weightFormat = method === 'metric' ? 'weight-in-kgs' : 'weight-in-lbs'
             let heightFormat = method === 'metric' ? 'height-in-cm' : 'height-in-in'
 
-            let w = parseFloat(document.getElementById('weight-in-kgs').value);
-            let h = parseFloat(document.getElementById('height-in-cm').value);
+            let w = parseFloat(document.getElementById(weightFormat).value);
+            let h = parseFloat(document.getElementById(heightFormat).value);
             let person = new Person({
                 weight: w,
                 height: h,
