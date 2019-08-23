@@ -69,7 +69,8 @@
                 weight: w,
                 height: h,
             });
-            person.calculate_bmi();
+            
+            method === 'metric' ? person.calculate_bmi() : person.calculate_imperial_bmi();
             resolve(person);
         })
     };
