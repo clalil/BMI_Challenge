@@ -43,6 +43,7 @@
     global.calculateForm = document.querySelector('#calculate');
     global.displayValueElement = document.querySelector('#display_value');
     global.displayMessageElement = document.querySelector('#display_message');
+    global.methodSelector = document.querySelector('#my_select');
 
     document.addEventListener('DOMContentLoaded', () => {
         global.calculateForm.addEventListener('submit', event => {
@@ -56,6 +57,7 @@
     });
 
     const calculateBMI = () => {
+        let method = global.methodSelector.options[global.methodSelector.selectedIndex].value
         return new Promise(resolve => {
             let w = parseFloat(document.getElementById('weight-in-kgs').value);
             let h = parseFloat(document.getElementById('height-in-cm').value);
