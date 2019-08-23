@@ -3,14 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BMI Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>My BMI Calculator</title>
     <script src="js/person.js"></script>
     <script src="js/bmi_calculator.js"></script>
 </head>
 
 <body>
+<div class="container">
+
+    <div class="about">
+                <h1>BMI Calculator</h1>
+    </div>
 
     <form id="calculate">
+
+            <div class="form-group row">
+                    <div class="col-auto">
+                        <select class="form-control" id="my_select">
+                            <option value="metric">Metric System</option>
+                            <option value="imperial">Imperial System</option>
+                        </select>
+                    </div>
+                </div>
 
         <div id="metric-inputs">
             <input type="text" id="weight-in-kgs" placeholder="Weight">
@@ -21,15 +39,6 @@
             <input type="text" id="weight-in-lbs" placeholder="Weight">
             <input type="text" id="height-in-in" placeholder="Height">
         </div>
-
-        <div class="form-group row">
-            <div class="col-auto">
-                <select class="form-control" id="my_select">
-                    <option value="metric">Metric System</option>
-                    <option value="imperial">Imperial System</option>
-                </select>
-            </div>
-        </div>
         
         <button type="submit" value="Calculate"> Calculate </button>
     </form>
@@ -38,6 +47,7 @@
         <span id="display_value"></span>
         <span id="display_message"></span>
     </div>
+</div>
 
 <script type="text/javascript">  
 
