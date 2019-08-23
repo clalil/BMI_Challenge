@@ -2,7 +2,7 @@ const { expect } = require('chai');
 const BrowserHelpers = require('e2e_training_wheels')
 const browser = new BrowserHelpers()
 
-describe('User can calculate BMI', () => {
+describe('User can calculate BMI with the metric units', () => {
     before(async () => {
         await browser.init()
         await browser.visitPage('http://localhost:8080/')
