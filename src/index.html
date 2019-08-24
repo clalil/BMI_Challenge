@@ -19,33 +19,40 @@
                 <h1>BMI Calculator</h1>
     </div>
 
-    <form id="calculate">
+    <div class="calculator">
+        <form id="calculate">
 
-            <div class="form-group row">
-                    <div class="col-auto">
-                        <select class="form-control" id="my_select">
-                            <option value="metric">Metric System</option>
-                            <option value="imperial">Imperial System</option>
-                        </select>
-                    </div>
+                <div class="form-group row">
+                        <div class="col-auto">
+                                <p>Choose unit system to calculate your BMI:</p>
+                            <select class="form-control" id="my_select">
+                                <option value="metric">Metric</option>
+                                <option value="imperial">Imperial</option>
+                            </select>
+                        </div>
                 </div>
 
-        <div id="metric-inputs">
-            <input type="text" id="weight-in-kgs" placeholder="Weight">
-            <input type="text" id="height-in-cm" placeholder="Height">
-        </div>
+            <div id="metric-inputs">
+                <p>The metric BMI method is calculated using a formula that requires a person's weight in <em>kilograms</em> and height in <em>meters</em>.</p>
+                <input type="text" id="weight-in-kgs" placeholder="Enter your weight (kg)">
+                <input type="text" id="height-in-cm" placeholder="Enter your height (m)">
+            </div>
 
-        <div id="imperial-inputs">
-            <input type="text" id="weight-in-lbs" placeholder="Weight">
-            <input type="text" id="height-in-in" placeholder="Height">
-        </div>
-        
-        <button type="submit" value="Calculate"> Calculate </button>
-    </form>
+            <div id="imperial-inputs">
+                <p>The imperial BMI method is calculated using a formula that requires a person's weight in <em>pounds</em> and height in <em>inches</em>.</p>
+                <input type="text" id="weight-in-lbs" placeholder="Enter your weight (lbs)">
+                <input type="text" id="height-in-in" placeholder="Enter your height (in)">
+            </div>
 
-    <div>
-        <span id="display_value"></span>
-        <span id="display_message"></span>
+            <div class="display">
+                <p>Result:</p>
+            <span id="display_value"></span>
+            <span id="display_message"></span>
+            </div>
+
+            <button type="submit" value="Calculate"> Calculate </button>
+
+        </form>
     </div>
 </div>
 
