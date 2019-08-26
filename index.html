@@ -24,25 +24,25 @@
 
                 <div class="form-group row">
                         <div class="col-auto">
-                                <p>Choose unit system to calculate your BMI:</p>
+                                <p>Click to change unit system to imperial:</p>
                             <select class="form-control" id="my_select">
                                 <option value="metric">Metric</option>
                                 <option value="imperial">Imperial</option>
                             </select>
                         </div>
                 </div>
-
             <div id="metric-inputs">
                 <p>The metric BMI method is calculated using a formula that requires a person's weight in <em>kilograms</em> and height in <em>meters</em>.</p>
                 <input type="text" id="weight-in-kgs" placeholder="Enter your weight (kg)">
                 <input type="text" id="height-in-cm" placeholder="Enter your height (m)">
             </div>
-
+            <div id="show">
             <div id="imperial-inputs">
                 <p>The imperial BMI method is calculated using a formula that requires a person's weight in <em>pounds</em> and height in <em>inches</em>.</p>
                 <input type="text" id="weight-in-lbs" placeholder="Enter your weight (lbs)">
                 <input type="text" id="height-in-in" placeholder="Enter your height (in)">
             </div>
+        </div>
 
             <div class="display">
                 <p>Result:</p>
@@ -62,6 +62,12 @@
     global.displayValueElement = document.querySelector('#display_value');
     global.displayMessageElement = document.querySelector('#display_message');
     global.methodSelector = document.querySelector('#my_select');
+    hideMe = document.querySelector('#my_select');
+
+    hideMe.addEventListener('click', () => {
+        document.getElementById('show').style.display = 'block';
+    })
+
     document.addEventListener('DOMContentLoaded', () => {
         global.calculateForm.addEventListener('submit', event => {
             event.preventDefault();
