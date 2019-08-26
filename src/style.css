@@ -92,6 +92,10 @@
     margin: 1rem;
   }
 
+  #show {
+    display: none;
+  }
+
   p {
     padding: 1rem 0.5rem;
   }
