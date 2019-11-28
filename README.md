@@ -8,7 +8,7 @@
 This BMI calculator can be used to calculate a person's Body Mass Index (BMI) for both mertric and imperial units. BMI is often used as a risk indicator of developing noncommunicable diseases (NCDs) like cardiovascular disease and diabetes. You can learn more about the BMI and how to interpret it from the [World Health Organization](http://www.euro.who.int/en/health-topics/disease-prevention/nutrition/a-healthy-lifestyle/body-mass-index-bmi).
 
 ## Deployment 
-This BMI calculator is currently deployed online from a GitHub page in this repository.  
+This BMI calculator is currently deployed online from [Netlify](https://pure-js-bmi-calculator.netlify.com/).  
 
 ## Getting started
 
