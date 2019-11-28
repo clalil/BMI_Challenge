@@ -17,7 +17,7 @@ describe('User can calculate BMI with the metric units', () => {
     });
 
     it('by inputing his weight and height', async () => {
-
+      await browser.selectOption("select[id='my_select']", {option: 'metric' })
         await browser.fillIn("input[id='weight-in-kgs']", { with: "95" })
         await browser.fillIn("input[id='height-in-cm']", { with: "185" })
 

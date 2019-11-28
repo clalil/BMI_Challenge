@@ -46,6 +46,7 @@
     padding: 1rem 0.5rem;
     border: 1px solid #ab766f;
 }
+
   .form-control {
         margin: 0.5rem;
         padding: 1rem;
@@ -92,7 +93,7 @@
     margin: 1rem;
   }
 
-  #show {
+  .hidden {
     display: none;
   }
 
